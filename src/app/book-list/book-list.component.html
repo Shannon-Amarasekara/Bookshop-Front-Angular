@@ -1,0 +1,23 @@
+<h2>The Book List</h2>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Book cover</th>
+    </tr>
+
+
+    <tr *ngFor="let book of books">
+
+        <th>{{book.id}}</th> 
+        <th>{{book.name}}</th> 
+        <th>{{book.author}}</th> 
+        <th> 
+        <img src="{{book.image}}" alt="{{book.name}} not found" width="200" height="300">
+        </th>
+
+    </tr>
+
+</table>

@@ -1,7 +1,9 @@
+import { Genre } from './genre';
 
 export class Book {
-    id: string;
+    id: number;
     name: string;
     author: string;
+    genre: Genre;
     image: string;
 }

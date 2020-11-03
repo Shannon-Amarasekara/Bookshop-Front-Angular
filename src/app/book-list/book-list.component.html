@@ -1,23 +1,41 @@
-<h2>The Book List</h2>
+<app-menu></app-menu>
+<h1>Books</h1>
+<br><br>
 
-<table>
-    <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Author</th>
-        <th>Book cover</th>
-    </tr>
+<div class="container">
+    Search by title: <input type="text" [(ngModel)]="searchValue">
+    <button (click)="findByTerm()">Go</button>
+    <br>
 
+    <button (click)="findAll()">All books</button>
+    <br>
 
-    <tr *ngFor="let book of books">
+    <select [(ngModel)]="genreSearch">
+        <option *ngFor="let g of genres">{{g}}</option>
+    </select>
 
-        <th>{{book.id}}</th> 
-        <th>{{book.name}}</th> 
-        <th>{{book.author}}</th> 
-        <th> 
-        <img src="{{book.image}}" alt="{{book.name}} not found" width="200" height="300">
-        </th>
+    <button (click)="findByGenre()">Filter genre</button>
+</div>
 
-    </tr>
+<br>
+<div class="container">
+    <table class="table">
 
-</table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Book cover</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td>{{book.name}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.genre}}</td>
+                <td><img src="{{book.image}}" width="100" height="150"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

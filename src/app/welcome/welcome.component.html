@@ -1,51 +1,43 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="height: 60px;" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Shannon's Bookshop</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true"
-            aria-label="Toggle navigation">
-
-            Menu
-            <svg class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas"
-                data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-                <path fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-                </path>
-            </svg>
-        </button>
-        <div class="navbar-collapse collapse show" id="navbarResponsive" style="">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cv">CV</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<app-menu></app-menu>
 
 <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
 
-            <div><img class="img-fluid" src="assets/img/cv/cv-circle-cropped.png"></div>
-            <br>
-            <h1 class="mx-auto my-0"></h1>
-            <h2 class="text-white mx-auto mt-2 mb-5">
-                Hi there! Welcome to my website.
-                <br><br>
+            <div><img class="img-fluid" align="left" src="assets/img/cv/cv-circle-cropped.png"></div>
 
-                I created this online bookshop as I have always loved reading ever since I was very young, starting with
-                the Harry Potter series as many others have. The books you will come accross are all books that I
-                have read and this way, I hope you get to know me a little better.
+            <div class="box-tra">
+                <h1 class="mx-auto my-0"></h1>
+                <p class="text-white mx-auto mt-2" align="left">
+                    Hi there! Welcome to my website.
+                    <br><br>
 
-                <br><br>
+                    I aspire to be a software developer working for a company I believe in, part of a team that I can
+                    learn
+                    from and shares my passion for code. Currently studying full time from home, creating projects helps
+                    me
+                    put the skills I learn to use and enjoy my progress.
+                    <br><br>
 
-                On this current page you can find my CV and contact details including my github account.
+                    I created this online bookshop as I have always loved reading ever since I was very young, starting
+                    with
+                    the Harry Potter series as many others have. The books you will come accross are all books that I
+                    have read and this way, I hope you get to know me a little better.
+                    <br><br>
 
-                I hope you enjoy your visit.
+                    On this current page you can find my CV and contact details including my github account, on which
+                    you
+                    can find the full code for this website.
+                    <br><br>
 
-            </h2>
-            <a routerLink="/home" class="btn btn-primary js-scroll-trigger">Access Bookshop</a>
+                    I hope you enjoy your visit.
+
+                </p>
+            </div>
+
+            <a routerLink="/home" class="btn btn-primary js-scroll-trigger" href="#accessBookshopButton">Access
+                Bookshop</a>
+
         </div>
     </div>
 </header>

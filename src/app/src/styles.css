@@ -1,0 +1,7 @@
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+ 
+@import "../src/global.css";
+
+@import "./app/menu/menu.component.css";
+@import "./app/layout/button.css";

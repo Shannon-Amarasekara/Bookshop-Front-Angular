@@ -13,4 +13,13 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onCreatorPage(): boolean {
+    if (window.location.href.indexOf('welcome') > -1) {
+      console.log('your are on creator page');
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }

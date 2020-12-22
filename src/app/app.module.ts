@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FooterComponent } from './footer/footer.component';
+import { SearchNavigationComponent } from './search-navigation/search-navigation.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     LogoutComponent,
     WelcomeComponent,
-    FooterComponent
+    FooterComponent,
+    SearchNavigationComponent
   ],
   imports: [
     BrowserModule,

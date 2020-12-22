@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'full'},
   { path: 'welcome', component: WelcomeComponent},
   { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent, canActivate: [RouteGuardService] },
-  { path: 'books', component: BookListComponent, canActivate: [RouteGuardService] },
+  { path: 'home', component: HomeComponent },
+  { path: 'books', component: BookListComponent },
   { path: 'logout', component: LogoutComponent, canActivate: [RouteGuardService] }
 ];
 

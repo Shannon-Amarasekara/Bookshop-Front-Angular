@@ -6,4 +6,5 @@ export class Book {
     author: string;
     genre: Genre;
     image: string;
+    copiesSold: number;
 }

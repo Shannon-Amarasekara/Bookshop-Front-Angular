@@ -13,6 +13,10 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FooterComponent } from './footer/footer.component';
+import { SearchNavigationComponent } from './search-navigation/search-navigation.component';
+import { MasterheadComponent } from './welcome/masterhead/masterhead.component';
+import { CvComponent } from './welcome/cv/cv.component';
+import { RandomBestsellersComponent } from './homepage/home/random-bestsellers/random-bestsellers.component';
 
 
 @NgModule({
@@ -24,7 +28,11 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     LogoutComponent,
     WelcomeComponent,
-    FooterComponent
+    FooterComponent,
+    SearchNavigationComponent,
+    MasterheadComponent,
+    CvComponent,
+    RandomBestsellersComponent
   ],
   imports: [
     BrowserModule,

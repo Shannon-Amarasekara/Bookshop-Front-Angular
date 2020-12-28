@@ -22,8 +22,8 @@ export class BookListComponent implements OnInit {
     this.findAll();
   }
 
-  public findByTerm(): void {
-    this.bookService.findByTerm(this.searchValue).subscribe(books => {
+  public findByTerm(search: string): void {
+    this.bookService.findByTerm(search).subscribe(books => {
       this.books = books;
     })
   }

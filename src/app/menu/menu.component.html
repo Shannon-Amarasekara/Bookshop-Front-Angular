@@ -1,5 +1,7 @@
+<nav>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="height: 60px;" id="mainNav">
 	<div class="container">
+
 		<a class="navbar-brand js-scroll-trigger" href="#page-top">Shannon's Bookworm Corner</a>
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
 			data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true"
@@ -24,8 +26,8 @@
 						href="#books">Books</a>
 				</li>
 
-				<li class="nav-item"><a *ngIf="authenticationService.isUserLoggedIn() && !onCreatorPage()" routerLink="/welcome"
-						class="nav-link js-scroll-trigger" href="#about">Creator</a></li>
+				<li class="nav-item"><a *ngIf="authenticationService.isUserLoggedIn() && !onCreatorPage()"
+						routerLink="/welcome" class="nav-link js-scroll-trigger" href="#about">Creator</a></li>
 
 				<li class="nav-item"><a *ngIf="onCreatorPage()" class="nav-link js-scroll-trigger" href="#cv">CV</a>
 				</li>
@@ -45,3 +47,5 @@
 		</div>
 	</div>
 </nav>
+<br>
+

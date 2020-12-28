@@ -1,5 +1,3 @@
-
-/* NAVIGATION - complete  */
 #mainNav {
   min-height: 3.5rem;
   background-color: white;
@@ -70,6 +68,7 @@
 .navbar-shrink .nav-link:hover {
   color: primary;
 }
+
 
 .navbar-shrink .nav-link:active {
   color: black primary, 15%;

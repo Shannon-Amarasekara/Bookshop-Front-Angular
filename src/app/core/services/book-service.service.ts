@@ -27,4 +27,8 @@ export class BookService {
   public findByGenre(genre: Genre): Observable<Book[]>{
     return this.http.get<Book[]>(`${this.baseUrl}/books/genre/${genre}`)
   }
+
+  public findFiveRandomBestsellers(): Observable<Book[]>{
+    return this.http.get<Book[]>(`${this.baseUrl}/books/fiveRandomBestsellers`)
+  }
 }

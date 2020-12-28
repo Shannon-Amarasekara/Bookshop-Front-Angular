@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SearchNavigationComponent } from './search-navigation/search-navigation.component';
 import { MasterheadComponent } from './welcome/masterhead/masterhead.component';
 import { CvComponent } from './welcome/cv/cv.component';
+import { RandomBestsellersComponent } from './homepage/home/random-bestsellers/random-bestsellers.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { CvComponent } from './welcome/cv/cv.component';
     SearchNavigationComponent,
     MasterheadComponent,
     CvComponent,
+    RandomBestsellersComponent
   ],
   imports: [
     BrowserModule,

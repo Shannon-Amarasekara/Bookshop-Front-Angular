@@ -12,10 +12,9 @@ export class WelcomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  accessGithub(){
+  accessGithub(): void{
     console.log(window.location.href)
     window.location.href = 'https://github.com/Shannon-Amarasekara/'
-
   }
 
 }

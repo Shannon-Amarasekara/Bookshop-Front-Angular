@@ -4,7 +4,7 @@
 
 <div class="container">
     Search by title: <input type="text" [(ngModel)]="searchValue">
-    <button (click)="findByTerm()">Go</button>
+    <button (click)="findByTerm(searchValue)">Go</button>
     <br>
 
     <button (click)="findAll()">All books</button>

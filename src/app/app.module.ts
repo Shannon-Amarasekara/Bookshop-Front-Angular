@@ -17,6 +17,7 @@ import { SearchNavigationComponent } from './search-navigation/search-navigation
 import { MasterheadComponent } from './welcome/masterhead/masterhead.component';
 import { CvComponent } from './welcome/cv/cv.component';
 import { RandomBestsellersComponent } from './homepage/home/random-bestsellers/random-bestsellers.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { RandomBestsellersComponent } from './homepage/home/random-bestsellers/r
     SearchNavigationComponent,
     MasterheadComponent,
     CvComponent,
-    RandomBestsellersComponent
+    RandomBestsellersComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

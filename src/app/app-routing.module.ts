@@ -6,6 +6,7 @@ import { RouteGuardService } from './core/services/route-guard.service';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'books', component: BookListComponent },
+  { path: 'basket', component: CheckoutComponent},
   { path: 'logout', component: LogoutComponent, canActivate: [RouteGuardService] }
 ];
 

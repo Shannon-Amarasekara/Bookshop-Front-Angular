@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BookService } from '../core/services/book-service.service';
-import { Book } from '../core/models/book';
+import { Book } from '../core/models/book/book';
 
 @Component({
   selector: 'app-search-navigation',

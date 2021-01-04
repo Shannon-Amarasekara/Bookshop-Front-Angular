@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Book } from 'src/app/core/models/book';
+import { Book } from 'src/app/core/models/book/book';
 import { BookService } from 'src/app/core/services/book-service.service';
+import { BasketService } from 'src/app/core/services/basketService/basket.service';
+import { BookId } from 'src/app/core/models/book/book-id/bookid';
 
 @Component({
   selector: 'app-random-bestsellers',
@@ -9,9 +11,10 @@ import { BookService } from 'src/app/core/services/book-service.service';
 })
 export class RandomBestsellersComponent implements OnInit {
 
-fiveRandomBestsellers: Book[];
+  fiveRandomBestsellers: Book[];
+  books: Book[];
 
-  constructor(private bookService: BookService) { }
+  constructor(private bookService: BookService, private basketService: BasketService) { }
 
   ngOnInit(): void {
     this.findFiveRandomBestsellers();
@@ -22,4 +25,9 @@ fiveRandomBestsellers: Book[];
       this.fiveRandomBestsellers = books)
   }
 
+  public addToBasket(id: BookId): void {
+    this.bookService.findAll().subscribe(books =>
+    this.books = books);
+    console.log(this.books[0]);
+  }
 }

@@ -1,0 +1,10 @@
+.vertical {
+  display: grid;
+  justify-content: space-around;
+}
+
+h4 {
+  font-size: 20px;
+  padding-left: 45px;
+
+}

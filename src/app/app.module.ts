@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BookListComponent } from './book-list/book-list.component';
+import { BookSearchComponent } from './book-search-page/book-search.component';
 import { BookService } from './core/services/book-service.service';
 import { HomeComponent } from './homepage/home/home.component';
 import { MenuComponent } from './menu/menu.component';
@@ -17,13 +17,13 @@ import { SearchNavigationComponent } from './search-navigation/search-navigation
 import { MasterheadComponent } from './welcome/masterhead/masterhead.component';
 import { CvComponent } from './welcome/cv/cv.component';
 import { RandomBestsellersComponent } from './homepage/home/random-bestsellers/random-bestsellers.component';
-import { CheckoutComponent } from './checkout/checkout.component';
+import { CheckoutComponent } from './checkout-page/checkout.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookListComponent,
+    BookSearchComponent,
     HomeComponent,
     MenuComponent,
     LoginComponent,

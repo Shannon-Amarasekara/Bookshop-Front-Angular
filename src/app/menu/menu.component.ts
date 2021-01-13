@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from '../core/services/authentication-service.service';
+import { AuthenticationService } from '../core/services/authentication-service/authentication-service.service';
 
 @Component({
   selector: 'app-menu',
@@ -14,7 +14,7 @@ export class MenuComponent implements OnInit {
   }
 
   onCreatorPage(): boolean {
-    if (window.location.href.indexOf('welcome') > -1) {
+    if (window.location.href.indexOf('creator') > -1) {
       return true;
     } else {
       return false;

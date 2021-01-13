@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { BasketService } from '../core/services/basket-service/basket.service';
+import { BasketService } from 'src/app/core/services/basket-service/basket.service';
 // import { Basket } from 'src/app/core/models/basket/basket';
-import { Book } from '../core/models/book/book';
+import { Book } from 'src/app/core/models/book/book';
 
 @Component({
   selector: 'app-checkout',

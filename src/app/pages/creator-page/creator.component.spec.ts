@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MasterheadComponent } from './masterhead.component';
+import { CreatorComponent } from './creator.component';
 
-describe('MasterheadComponent', () => {
-  let component: MasterheadComponent;
-  let fixture: ComponentFixture<MasterheadComponent>;
+describe('CreatorComponent', () => {
+  let component: CreatorComponent;
+  let fixture: ComponentFixture<CreatorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MasterheadComponent ]
+      declarations: [ CreatorComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MasterheadComponent);
+    fixture = TestBed.createComponent(CreatorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

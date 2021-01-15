@@ -12,7 +12,8 @@ import { BookId } from 'src/app/core/models/book/book-id/bookid';
 export class RandomBestsellersComponent implements OnInit {
 
   fiveRandomBestsellers: Book[];
-  books: Book[];
+  book: Book;
+  bookId: BookId;
 
   constructor(private bookService: BookService, private basketService: BasketService) { }
 
@@ -26,8 +27,10 @@ export class RandomBestsellersComponent implements OnInit {
   }
 
   public addToBasket(id: BookId): void {
-    this.bookService.findAll().subscribe(books =>
-    this.books = books);
-    console.log(this.books[0]);
-  }
+    this.basketService.addBookToBasket(id).subscribe( id => {
+      this.bookId = id;
+    })
+    console.log(id);  
+    console.log(this.bookId);
+}
 }

@@ -20,6 +20,7 @@ import { RandomBestsellersComponent } from './pages/home-page/home/random-bestse
 import { CheckoutComponent } from './pages/checkout-page/checkout.component';
 import { BasketService } from './core/services/basket-service/basket.service';
 import { AuthenticationService } from './core/services/authentication-service/authentication-service.service';
+import { HttpInterceptorService } from './core/services/http-service/http-interceptor.service';
 
 
 @NgModule({
@@ -44,7 +45,7 @@ import { AuthenticationService } from './core/services/authentication-service/au
     HttpClientModule,
     FormsModule
   ],
-  providers: [BookService, BasketService, AuthenticationService],
+  providers: [BookService, BasketService, AuthenticationService, HttpInterceptorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

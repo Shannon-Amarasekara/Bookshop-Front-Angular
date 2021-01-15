@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BasketService } from 'src/app/core/services/basket-service/basket.service';
-// import { Basket } from 'src/app/core/models/basket/basket';
+import { Basket } from 'src/app/core/models/basket/basket';
 import { Book } from 'src/app/core/models/book/book';
 
 @Component({
@@ -10,18 +10,17 @@ import { Book } from 'src/app/core/models/book/book';
 })
 export class CheckoutComponent implements OnInit {
 
-  // basket: Basket;
-  books: Book[];
-
+  basket: Basket;
+  
   constructor(private basketService: BasketService) { }
 
   ngOnInit(): void {
-    this.getBooks();
+    this.getBasket();
   }
 
-  public getBooks(): void {
-    this.basketService.getBasket().subscribe(books => {
-      this.books = books;
+  public getBasket(): void {
+    this.basketService.getBasket().subscribe(basket => {
+      this.basket = basket;
     })
   }
 

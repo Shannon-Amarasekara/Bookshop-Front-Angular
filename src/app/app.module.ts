@@ -9,18 +9,15 @@ import { BookSearchComponent } from './pages/book-search-page/book-search.compon
 import { BookService } from './core/services/book-service/book-service.service';
 import { HomeComponent } from './pages/home-page/home/home.component';
 import { MenuComponent } from './menu/menu.component';
-import { LoginComponent } from './pages/login-page/login.component';
-import { LogoutComponent } from './pages/logout-page/logout.component';
 import { CreatorComponent } from './pages/creator-page/creator.component';
 import { FooterComponent } from './footer/footer.component';
-import { SearchNavigationComponent } from './search-navigation/search-navigation.component';
 import { MasterheadComponent } from './pages/creator-page/masterhead/masterhead.component';
 import { CvComponent } from './pages/creator-page/cv/cv.component';
 import { RandomBestsellersComponent } from './pages/home-page/home/random-bestsellers/random-bestsellers.component';
 import { CheckoutComponent } from './pages/checkout-page/checkout.component';
 import { BasketService } from './core/services/basket-service/basket.service';
-import { AuthenticationService } from './core/services/authentication-service/authentication-service.service';
 import { HttpInterceptorService } from './core/services/http-service/http-interceptor.service';
+import { BasketComponent } from './pages/checkout-page/basket/basket.component';
 
 
 @NgModule({
@@ -29,15 +26,13 @@ import { HttpInterceptorService } from './core/services/http-service/http-interc
     BookSearchComponent,
     HomeComponent,
     MenuComponent,
-    LoginComponent,
-    LogoutComponent,
     CreatorComponent,
     FooterComponent,
-    SearchNavigationComponent,
     MasterheadComponent,
     CvComponent,
     RandomBestsellersComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    BasketComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +40,7 @@ import { HttpInterceptorService } from './core/services/http-service/http-interc
     HttpClientModule,
     FormsModule
   ],
-  providers: [BookService, BasketService, AuthenticationService, HttpInterceptorService],
+  providers: [BookService, BasketService, HttpInterceptorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

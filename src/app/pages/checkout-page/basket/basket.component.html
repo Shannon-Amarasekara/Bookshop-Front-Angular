@@ -1,0 +1,15 @@
+<app-menu></app-menu>
+<br><br>
+
+   <h3>Basket</h3><br>
+    <div class="vertical">
+        <div *ngFor="let book of basket?.books">
+            <br>
+            <img src="{{book.image}}" width="150" height="200">
+            <br>
+            {{book.name}}
+            <br>
+            {{book.author.firstName}} {{book.author.lastName}}
+            <br><br><br>
+        </div>
+    </div>

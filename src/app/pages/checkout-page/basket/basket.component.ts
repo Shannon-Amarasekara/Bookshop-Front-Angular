@@ -3,14 +3,14 @@ import { BasketService } from 'src/app/core/services/basket-service/basket.servi
 import { Basket } from 'src/app/core/models/basket/basket';
 
 @Component({
-  selector: 'app-checkout',
-  templateUrl: './checkout.component.html',
-  styleUrls: ['./checkout.component.css']
+  selector: 'app-basket',
+  templateUrl: './basket.component.html',
+  styleUrls: ['./basket.component.css']
 })
-export class CheckoutComponent implements OnInit {
+export class BasketComponent implements OnInit {
 
   basket: Basket;
-  
+
   constructor(private basketService: BasketService) { }
 
   ngOnInit(): void {

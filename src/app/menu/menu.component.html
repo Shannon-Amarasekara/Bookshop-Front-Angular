@@ -26,8 +26,12 @@
 						href="#books">Books</a>
 				</li>
 
-				<li class="nav-item"><a *ngIf="authenticationService.isUserLoggedIn() && !onCreatorPage()"
-						routerLink="/welcome" class="nav-link js-scroll-trigger" href="#about">Creator</a></li>
+				<li class="nav-item"><a *ngIf="!onCreatorPage()" routerLink="/basket" class="nav-link js-scroll-trigger"
+						href="#basket">Checkout</a>
+				</li>
+
+				<li class="nav-item"><a *ngIf="!onCreatorPage()"
+						routerLink="/creator" class="nav-link js-scroll-trigger" href="#about">Creator</a></li>
 
 				<li class="nav-item"><a *ngIf="onCreatorPage()" class="nav-link js-scroll-trigger" href="#cv">CV</a>
 				</li>
@@ -35,13 +39,6 @@
 				<li class="nav-item"><a *ngIf="onCreatorPage()" class="nav-link js-scroll-trigger"
 						href="#contact">Contact</a>
 				</li>
-
-				<li class="nav-item"><a *ngIf="!authenticationService.isUserLoggedIn() && !onCreatorPage()"
-						routerLink="/login" class="nav-link js-scroll-trigger" href="#login">Login</a></li>
-
-				<li class="nav-item"><a *ngIf="authenticationService.isUserLoggedIn() && !onCreatorPage()"
-						routerLink="/logout" class="nav-link js-scroll-trigger" href="#logout">Logout</a></li>
-
 
 			</ul>
 		</div>

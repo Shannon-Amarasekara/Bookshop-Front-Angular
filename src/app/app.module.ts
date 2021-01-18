@@ -5,34 +5,33 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BookListComponent } from './book-list/book-list.component';
-import { BookService } from './core/services/book-service.service';
-import { HomeComponent } from './homepage/home/home.component';
+import { BookSearchComponent } from './pages/book-search-page/book-search.component';
+import { BookService } from './core/services/book-service/book-service.service';
+import { HomeComponent } from './pages/home-page/home/home.component';
 import { MenuComponent } from './menu/menu.component';
-import { LoginComponent } from './login/login.component';
-import { LogoutComponent } from './logout/logout.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { CreatorComponent } from './pages/creator-page/creator.component';
 import { FooterComponent } from './footer/footer.component';
-import { SearchNavigationComponent } from './search-navigation/search-navigation.component';
-import { MasterheadComponent } from './welcome/masterhead/masterhead.component';
-import { CvComponent } from './welcome/cv/cv.component';
-import { RandomBestsellersComponent } from './homepage/home/random-bestsellers/random-bestsellers.component';
+import { MasterheadComponent } from './pages/creator-page/masterhead/masterhead.component';
+import { CvComponent } from './pages/creator-page/cv/cv.component';
+import { RandomBestsellersComponent } from './pages/home-page/home/random-bestsellers/random-bestsellers.component';
+import { CheckoutComponent } from './pages/checkout-page/checkout.component';
+import { BasketService } from './core/services/basket-service/basket.service';
+import { BasketComponent } from './pages/checkout-page/basket/basket.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookListComponent,
+    BookSearchComponent,
     HomeComponent,
     MenuComponent,
-    LoginComponent,
-    LogoutComponent,
-    WelcomeComponent,
+    CreatorComponent,
     FooterComponent,
-    SearchNavigationComponent,
     MasterheadComponent,
     CvComponent,
-    RandomBestsellersComponent
+    RandomBestsellersComponent,
+    CheckoutComponent,
+    BasketComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +39,7 @@ import { RandomBestsellersComponent } from './homepage/home/random-bestsellers/r
     HttpClientModule,
     FormsModule
   ],
-  providers: [BookService],
+  providers: [BookService, BasketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

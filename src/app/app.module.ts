@@ -16,7 +16,6 @@ import { CvComponent } from './pages/creator-page/cv/cv.component';
 import { RandomBestsellersComponent } from './pages/home-page/home/random-bestsellers/random-bestsellers.component';
 import { CheckoutComponent } from './pages/checkout-page/checkout.component';
 import { BasketService } from './core/services/basket-service/basket.service';
-import { HttpInterceptorService } from './core/services/http-service/http-interceptor.service';
 import { BasketComponent } from './pages/checkout-page/basket/basket.component';
 
 
@@ -40,7 +39,7 @@ import { BasketComponent } from './pages/checkout-page/basket/basket.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [BookService, BasketService, HttpInterceptorService],
+  providers: [BookService, BasketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

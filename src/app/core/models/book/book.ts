@@ -9,4 +9,5 @@ export class Book {
     genre: Genre;
     image: string;
     copiesSold: number;
+    price: number;
 }

@@ -31,7 +31,7 @@ import { BasketComponent } from './pages/checkout-page/basket/basket.component';
     CvComponent,
     RandomBestsellersComponent,
     CheckoutComponent,
-    BasketComponent
+    BasketComponent,
   ],
   imports: [
     BrowserModule,

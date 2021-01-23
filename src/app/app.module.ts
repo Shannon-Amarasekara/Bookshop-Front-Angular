@@ -17,6 +17,8 @@ import { RandomBestsellersComponent } from './pages/home-page/home/random-bestse
 import { CheckoutComponent } from './pages/checkout-page/checkout.component';
 import { BasketService } from './core/services/basket-service/basket.service';
 import { BasketComponent } from './pages/checkout-page/basket/basket.component';
+import { BookPageComponent } from './pages/book-page/book-page.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 @NgModule({
@@ -32,12 +34,14 @@ import { BasketComponent } from './pages/checkout-page/basket/basket.component';
     RandomBestsellersComponent,
     CheckoutComponent,
     BasketComponent,
+    BookPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [BookService, BasketService],
   bootstrap: [AppComponent]

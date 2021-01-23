@@ -1,10 +1,25 @@
-.horizontal {
-  display: flex;
-  justify-content: space-around;
-}
 
 h4 {
   font-size: 20px;
   padding-left: 45px;
+}
 
+.carousel {
+ max-width: 10000px;
+position: relative;
+margin: auto;
+display: flex;
+justify-content: space-around;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  font-size: 500%;
+  margin-top: 5%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }

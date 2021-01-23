@@ -91,9 +91,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+              "src/styles.scss"            ],
+            "scripts": [ ]
           }
         },
         "lint": {

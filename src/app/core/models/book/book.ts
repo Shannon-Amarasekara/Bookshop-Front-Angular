@@ -10,4 +10,5 @@ export class Book {
     image: string;
     copiesSold: number;
     price: number;
+    synopsis: string;
 }

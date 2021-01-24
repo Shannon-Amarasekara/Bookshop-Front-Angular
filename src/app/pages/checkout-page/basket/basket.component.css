@@ -6,33 +6,19 @@
     padding: 0;
   }
   
-  input,
-  button {
+  input{
     border: 0 none;
     outline: 0 none;
   }
   
-  button {
-    background-color: #666;
-    color: #fff;
-  }
-  
-  button:hover,
-  button:focus {
-    background-color: #555;
-  }
-  
   img,
-  .basket-module,
   .basket-labels,
   .basket-product {
     width: 100%;
   }
   
   input,
-  button,
   .basket,
-  .basket-module,
   .basket-labels,
   .item,
   .author,
@@ -41,17 +27,6 @@
   .product-image,
   .product-name {
     float: left;
-  }
-  
-  .price:before,
-  .subtotal:before,
-  .subtotal-value:before,
-  .total-value:before {
-    content: '£';
-  }
-  
-  .hide {
-    display: none;
   }
   
   main {
@@ -75,15 +50,6 @@
     width: 70%;
   }
   
-  .basket-module {
-    color: #111;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 0.3125rem;
-  }
-  
   .basket-labels {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -100,11 +66,6 @@
     color: #111;
     display: inline-block;
     padding: 0.625rem 0;
-  }
-  
-  li.price:before,
-  li.subtotal:before {
-    content: '';
   }
   
   .item {
@@ -142,10 +103,6 @@
     width: 65%;
   }
   
-  .product-frame {
-    border: 1px solid #aaa;
-  }
-  
   .product-name {
     color: black;
     padding: 2px;
@@ -177,13 +134,6 @@
     box-sizing: border-box;
   }
   
-  .summary-total-items {
-    color: #666;
-    font-size: 0.875rem;
-    text-align: center;
-  }
-  
-  .summary-subtotal,
   .summary-total {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -193,8 +143,6 @@
     padding: 0.5rem 0;
   }
   
-  .subtotal-title,
-  .subtotal-value,
   .total-title,
   .total-value{
     color: #111;
@@ -202,11 +150,6 @@
     width: 50%;
   }
   
-  .summary-delivery {
-    padding-bottom: 3rem;
-  }
-  
-  .subtotal-value,
   .total-value {
     text-align: right;
   }
@@ -214,30 +157,6 @@
   .total-title {
     font-weight: bold;
     text-transform: uppercase;
-  }
-  
-  .summary-checkout {
-    display: block;
-  }
-  
-  .checkout-cta {
-    display: block;
-    float: none;
-    font-size: 0.75rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0.625rem 0;
-    width: 100%;
-  }
-  
-  .summary-delivery-selection {
-    background-color: #ccc;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    display: block;
-    font-size: 0.625rem;
-    height: 34px;
-    width: 100%;
   }
   
   @media screen and (max-width: 640px) {
@@ -251,9 +170,6 @@
     .basket-labels {
       display: none;
     }
-    .basket-module {
-      margin-bottom: 1rem;
-    }
     .item {
       margin-bottom: 1rem;
     }
@@ -262,10 +178,6 @@
     }
     .product-name {
       width: 60%;
-    }
-    .author,
-    .subtotal {
-      width: 33%;
     }
     .author {
       text-align: center;

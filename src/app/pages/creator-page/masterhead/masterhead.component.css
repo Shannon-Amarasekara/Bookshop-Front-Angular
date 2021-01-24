@@ -11,33 +11,6 @@
   background-size: cover;
 }
 
-.masthead h1 {
-  font-family: font-family-special;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.masthead h2 {
-  max-width: 50rem;
-  font-size: 1rem;
-  position: absolute;
-}
-
-h1 {
-  font-size: 6.5rem;
-  line-height: 6.5rem;
-  letter-spacing: 0.8rem;
-}
-
-h2 {
-  max-width: 30rem;
-  font-size: 1.25rem;
-}
-
 img {
   width: 170px;
   height: 170px;
@@ -46,26 +19,9 @@ img {
   position: absolute;
 }
 
-p {
-  max-width: 55rem;
-  font-size: 1rem;
+#accessBookshopButton {
   position: absolute;
-  top: 100px;
-  left: 300px;
-  background-color: rgba(100, 100, 100, 0.6);
-  padding: 20px;
-}
-
-.btn {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  font-family: font-family-special;
-  font-size: 90%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-  position: absolute;
-  transition: .5s ease;
   left: 630px;
   top: 500px;
 }
+

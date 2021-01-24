@@ -1,15 +1,44 @@
-<app-menu></app-menu>
-<br><br>
+<main>
+     <div class="basket">
 
-   <h3>Basket</h3><br>
-    <div class="vertical">
-        <div *ngFor="let book of basket?.books">
-            <br>
-            <img src="{{book.image}}" width="150" height="200">
-            <br>
-            {{book.name}}
-            <br>
-            {{book.author.firstName}} {{book.author.lastName}}
-            <br><br><br>
-        </div>
-    </div>
+              <div class="basket-labels">
+                <ul>
+                  <li class="item item-heading">Book</li>
+                  <li class="author">Author</li>
+                  <li class="price">Price</li>
+                </ul>
+              </div>
+
+              <div *ngFor="let book of basket?.books" class="basket-product">
+                <div class="item">
+                  <div class="product-image">
+                    <img src="{{book.image}}" alt="Placholder Image 2">
+                  </div>
+                  <div class="product-name">
+                     {{book.name}}
+                  </div>
+                </div>
+                 <div class="author">
+                    <div class="author-field">{{book.author.firstName}} {{book.author.lastName}}</div>
+                  </div>
+
+                <div class="price">{{book.price}}</div>
+              </div>
+            </div>
+
+            <aside>
+                <br><br>
+              <div class="summary">
+                <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+               
+                <div class="summary-total">
+                  <div class="total-title">Total</div>
+                  <div class="total-value final-value" id="basket-total">{{basket?.totalPrice}}</div>
+                </div>
+               
+              </div>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            </aside>
+          </main>
+        

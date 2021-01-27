@@ -24,4 +24,8 @@ export class BasketService {
    return this.http.get<BookId>(`${this.baseUrl}/addBookToBasket/${id.value}`);
   }
 
+  public removeBookFromBasket(id: BookId): Observable<BookId> {
+    return this.http.get<BookId>(`${this.baseUrl}/removeBookFromBasket/${id.value}`);
+  }
+
 }

@@ -1,12 +1,9 @@
-.footer {
-  padding: 5rem 0;
-}
-
 .my-footer {
   background-color:steelblue;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 

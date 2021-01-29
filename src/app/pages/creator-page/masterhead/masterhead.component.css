@@ -20,8 +20,15 @@ img {
 }
 
 #accessBookshopButton {
+  background-color:dodgerblue;
+  color: aliceblue;
   position: absolute;
   left: 630px;
   top: 500px;
+  padding: 1.25rem 2rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 

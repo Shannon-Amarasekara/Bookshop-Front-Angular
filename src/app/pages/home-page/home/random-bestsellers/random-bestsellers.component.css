@@ -12,14 +12,3 @@ display: flex;
 justify-content: space-around;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  font-size: 500%;
-  margin-top: 5%;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}

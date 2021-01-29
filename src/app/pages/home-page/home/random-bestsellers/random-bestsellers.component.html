@@ -1,10 +1,9 @@
-
-<section>
-    <h4>Bestsellers</h4><br>
+<section class="my-random-bestsellers-class">
+    <div class= "bestsellers-title-class">
+        <h4>Bestsellers</h4>
+    </div>
 
     <div class="carousel">
-
-
         <div *ngFor="let book of fiveRandomBestsellers" >
 
             <img (click)="viewBook(book.id)" src="{{book.image}}" width="100" height="150">
@@ -20,7 +19,6 @@
                 <div class="fas fa-cart-plus"></div>
             </button>
         </div>
-
     </div>
 
 </section>

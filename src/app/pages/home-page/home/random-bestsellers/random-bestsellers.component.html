@@ -1,31 +1,11 @@
 <section class="my-random-bestsellers-class">
+    
     <div class= "bestsellers-title-class">
         <h4>Bestsellers</h4>
     </div>
 
     <div class="carousel">
-        <div *ngFor="let book of fiveRandomBestsellers" >
-
-            <div class="book-container">
-
-            <br><img class="book-image" (click)="viewBook(book.id)" src="{{book.image}}">
-
-            <div class="book-title">{{book.name}}</div>
-
-            <div class="author-name">{{book.author.firstName}} {{book.author.lastName}}</div>
-            
-            <div class="book-price">£{{book.price}}</div>
-
-            <div class="checkout-btn">
-
-                <button (click)="addToBasket(book.id)" class="btn" >
-                    <div class="fas fa-cart-plus"></div>
-                </button>
-
-            </div>
-
-            </div>
-
-        </div>
+        <app-book-preview *ngFor="let book of fiveRandomBestsellers" [book]="book"></app-book-preview>
     </div>
+
 </section>

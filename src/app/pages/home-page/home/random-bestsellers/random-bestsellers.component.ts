@@ -1,8 +1,6 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/core/models/book/book';
 import { BookService } from 'src/app/core/services/book-service/book-service.service';
-import { BasketService } from 'src/app/core/services/basket-service/basket.service';
 import { BookId } from 'src/app/core/models/book/book-id/bookid';
 
 @Component({
@@ -15,7 +13,7 @@ export class RandomBestsellersComponent implements OnInit {
   fiveRandomBestsellers: Book[];
   bookId: BookId;
 
-  constructor(private bookService: BookService, private basketService: BasketService, private router: Router) { }
+  constructor(private bookService: BookService) { }
 
   ngOnInit(): void {
     this.findFiveRandomBestsellers();
@@ -25,18 +23,5 @@ export class RandomBestsellersComponent implements OnInit {
     this.bookService.findFiveRandomBestsellers().subscribe(books => {
       this.fiveRandomBestsellers = books;
     })
-
-
   }
-
-  public addToBasket(id: BookId): void {
-    this.basketService.addBookToBasket(id).subscribe( id => {
-      this.bookId = id;
-    })
-  }
-
-  public viewBook(id: BookId): void {
-    this.router.navigateByUrl(`/books/${id.value}`);
-  }
-
 }

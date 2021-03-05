@@ -1,23 +1,7 @@
-.carousel {
-  max-width: 10000px;
-  position: relative;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-
-}
-
 .my-random-bestsellers-class {
   background-color:#e8fffa;
   padding-top: 50px;
   padding-bottom: 30px;
-}
-
-.book-container {
-  width: 220px;
-  height: 300px;
-  position:relative;
-  background-color: white;
 }
 
 .bestsellers-title-class {
@@ -26,35 +10,11 @@
   padding-bottom: 20px;
 }
 
-.book-image{
-  width: 100px;
-  height: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-}
+.carousel {
+  max-width: 10000px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
 
-.book-title {
-  font-size: 0.9rem;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-}
-
-.author-name {
-  font-size: 0.8rem;
-  font-style: italic;
-  text-align: center;
-}
-
-.book-price {
-  font-size: 0.8rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.checkout-btn {
-  align-items: center;
-  text-align: center;
 }

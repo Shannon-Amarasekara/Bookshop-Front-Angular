@@ -4,6 +4,16 @@
     padding-bottom: 20px;
 }
 
+.back-button {
+    background-color: rgb(1, 172, 172);
+    margin-left: 150px;
+    margin-top: 20px;
+    /* border: apx solid; */
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
 .book-container {
     width: 1000px;
     height: 600px;
@@ -11,7 +21,7 @@
     background-color: white;
     margin: auto;
     margin-bottom: 50px;
-    margin-top: 50px
+    margin-top: 20px
 }
 
 .book-image {
@@ -31,7 +41,7 @@
 .book-name {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 50px;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .book-author {
@@ -41,7 +51,7 @@
 
 .book-synopsis {
     text-align: justify;
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-top: 30px;
 }
 
@@ -49,7 +59,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: right;
     position: absolute;
-    top: 410px;
+    top: 440px;
     right: 0;
     width: 100px;
     margin-top: 10px;
@@ -61,7 +71,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: mediumaquamarine;
     position: absolute;
-    top: 460px;
+    top: 490px;
     right: 0;
     width: 150px;
     margin-right: 70px;

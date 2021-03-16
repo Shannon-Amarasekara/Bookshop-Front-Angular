@@ -55,6 +55,13 @@
     margin-top: 30px;
 }
 
+.book-genre {
+    font-size: 1.1vw;
+    font-style: italic;
+    position: absolute;
+    top: 460px;
+}
+
 .book-price {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: right;
@@ -71,7 +78,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: mediumaquamarine;
     position: absolute;
-    top: 490px;
+    top: 480px;
     right: 0;
     width: 150px;
     margin-right: 70px;

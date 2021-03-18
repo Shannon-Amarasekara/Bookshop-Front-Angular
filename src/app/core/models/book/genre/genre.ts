@@ -3,6 +3,7 @@ export enum Genre {
 Horror  = 'Horror',
 Fantasy = 'Fantasy',
 Romance = 'Romance',
-Science = 'Science'
+Science = 'Science',
+Philosophy = 'Philosophy'
 
 }

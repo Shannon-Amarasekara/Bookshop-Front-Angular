@@ -5,5 +5,15 @@
 
         <button class="submit-button">Go</button>
 
+        <div class="dropdown">
+
+            <button class="dropdown-button">Genres</button>
+
+            <div class="dropdown-content">
+                <option (click)="findByGenre(g)" *ngFor="let g of genres">{{g}}</option>
+            </div>
+
+        </div>
+
     </div>
 </div>

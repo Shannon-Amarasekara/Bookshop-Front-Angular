@@ -13,16 +13,23 @@ export class SearchBarComponent implements OnInit {
 
   books: Book[];
   genres: Array<Genre>;
+  genreFilter: Genre = null;
+  search: string = null;
 
-  constructor(private bookService: BookService, private router: Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.genres = Object.values(Genre);
-    console.log(this.genres);
   }
 
   public findByGenre(genre: Genre): void {
-    console.log(genre);
+    this.genreFilter = genre;
+    this.router.navigateByUrl(`/books/genre/${this.genreFilter}`);
+
+    if(window.location.href.indexOf('home') > -1 == false){
+      window.location.replace(`/books/genre/${this.genreFilter}`)
+    }
+
   }
 
 }

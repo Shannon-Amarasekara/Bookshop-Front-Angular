@@ -1,8 +1,8 @@
 .search-bar-container {
-    margin-top: 50px;
+    margin-top: 60px;
     height: 40px;
     width: 100%;
-    background-color:darkseagreen;
+    background-color:rgb(120,213,215);
 }
 
  input[type = text] {
@@ -23,9 +23,9 @@ input[type=text]:focus {
 }
 
 .submit-button {
-    background-color: skyblue;
+    background-color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 100px;
     margin-left: 5px;
 }
 
@@ -36,7 +36,8 @@ input[type=text]:focus {
 }
 
 .dropdown-button {
-    background-color: transparent;
+    background-color: white;
+    border-radius: 3px;
     border: none;
     cursor: pointer;
 }
@@ -47,7 +48,6 @@ input[type=text]:focus {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
 
 .dropdown-content a {
@@ -61,4 +61,5 @@ input[type=text]:focus {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  cursor: pointer;
 }

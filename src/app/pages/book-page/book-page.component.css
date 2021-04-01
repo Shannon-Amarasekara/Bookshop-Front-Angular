@@ -1,11 +1,11 @@
 .book-page {
-    background-color: #e8fffa;
-    padding-top: 50px;
+    background-color: rgb(243,247,247);
+    padding-top: 70px;
     padding-bottom: 20px;
 }
 
 .back-button {
-    background-color: rgb(1, 172, 172);
+    background-color: rgb(120,213,215);
     margin-left: 150px;
     margin-top: 20px;
     border: none;
@@ -75,7 +75,7 @@
 
 .add-to-basket-button {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: mediumaquamarine;
+    background-color: rgb(120,213,215);
     position: absolute;
     top: 480px;
     right: 0;

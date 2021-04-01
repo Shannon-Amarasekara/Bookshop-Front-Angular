@@ -1,37 +1,16 @@
 <app-menu></app-menu>
 
-<br><br>
+
+
+<section class="my-book-search-result-class">
+    <div class="book-search-result-title">
+        <h4>{{genre}}</h4>
+    </div>
+
+    <div class="carousel">
+        <app-book-preview *ngFor="let book of books" [book]="book"></app-book-preview>
+    </div>
+
+</section>
 
 <app-search-bar></app-search-bar>
-
-<div class="container">
-
-    <button (click)="findAll()">All books</button>
-    <br>
-    
-</div>
-
-<br>
-<div class="container">
-    <table class="table">
-
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Author</th>
-                <th>Genre</th>
-                <th>copiesSold</th>
-                <th>Book cover</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let book of books">
-                <td>{{book.name}}</td>
-                <td>{{book.author.firstName}} {{book.author.lastName}}</td>
-                <td>{{book.genre}}</td>
-            <td>{{book.copiesSold}}</td>
-                <td><img src="{{book.image}}" width="100" height="150"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>

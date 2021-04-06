@@ -1,81 +1,42 @@
-#mainNav {
-  min-height: 3.5rem;
+.main-nav-container {
+  width: 100%;
+  height: 70px;
   background-color: white;
+  position: fixed;
 }
 
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.75rem;
-  color: primary;
-  border: border-width solid primary;
-}
-
-#mainNav .navbar-toggler:focus {
-  outline: none;
-}
-
-#mainNav .navbar-brand {
+.main-nav {
   color: black;
-  font-weight: 700;
-  padding: 0.9rem 0;
+  margin-top: 15px;
 }
 
-#mainNav .navbar-nav .nav-item:hover {
-  color: fade(white, 80%);
-  outline: none;
-  background-color: transparent;
+.nav-title {
+  float: left;
+  font-weight: bold;
+  font-size: 1.5vw;
+  margin-left: 40px;
 }
 
-#mainNav .navbar-nav .nav-item:active,
-#mainNav .navbar-nav .nav-item:focus {
-  outline: none;
-  background-color: transparent;
+.nav-title:hover {
+  cursor: pointer;
 }
 
-.navbar-brand {
-  padding: 0.5rem 0;
-  color: rgba(255, 255, 255, 0.5);
+ul {
+  list-style-type: none;
+  float: right;
 }
 
-.nav-link {
-  transition: none;
-  padding: 2rem 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
+li {
+  float: left;
 }
 
-.nav-link:hover {
-  color: rgba(255, 255, 255, 0.75);
+li a {
+  padding-right: 30px;
+  color: rgb(102, 100, 100);
 }
 
-.nav-link:active {
-  color: white;
-}
-
-.navbar-shrink {
-  background-color: white;
-}
-
-.navbar-shrink .navbar-brand {
-  color: black;
-}
-
-.navbar-shrink .nav-link {
-  color: black;
-  padding: 1.5rem 1.5rem 1.25rem;
-  border-bottom: 0.25rem solid transparent;
-}
-
-.navbar-shrink .nav-link:hover {
-  color: primary;
-}
-
-
-.navbar-shrink .nav-link:active {
-  color: black primary, 15%;
-}
-
-.navbar-shrink .nav-link.active {
-  color: primary;
-  outline: none;
-  border-bottom: 0.25rem solid primary;
+li a:hover {
+  text-decoration: none;
+  color:black;
+  transition: 0.3s;
 }

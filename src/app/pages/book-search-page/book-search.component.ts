@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BookService } from '../../core/services/book-service/book-service.service';
 import { Book } from '../../core/models/book/book';
 import { Genre } from '../../core/models/book/genre/genre';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-book-search',
@@ -10,16 +11,15 @@ import { Genre } from '../../core/models/book/genre/genre';
 })
 export class BookSearchComponent implements OnInit {
 
+  genre: Genre;
   books: Book[];
-  searchValue: string;
-  genres: Array<Genre>;
-  genreSearch: Genre;
 
-  constructor(private bookService: BookService) { }
+  constructor(private route: ActivatedRoute, private bookService: BookService) { }
 
   ngOnInit(): void {
-    this.genres = Object.values(Genre);
-    this.findAll();
+    var genreString = this.route.snapshot.paramMap.get('genre');
+    this.genre = Genre [genreString]; 
+    this.findByGenre(this.genre);
   }
 
   public findAll(): void {
@@ -28,9 +28,10 @@ export class BookSearchComponent implements OnInit {
     })
   }
 
-  public findByGenre(): void {
-    this.bookService.findByGenre(this.genreSearch).subscribe(books => {
+  public findByGenre(genre: Genre): void {
+    this.bookService.findByGenre(this.genre).subscribe(books => {
       this.books = books;
     })
   }
+
 }

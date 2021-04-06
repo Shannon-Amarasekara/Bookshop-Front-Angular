@@ -37,4 +37,8 @@ export class BookPageComponent implements OnInit {
     })
   }
 
+  public goBack(){
+    window.history.back();
+  }
+
 }

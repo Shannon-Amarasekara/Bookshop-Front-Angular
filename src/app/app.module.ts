@@ -19,6 +19,8 @@ import { BasketService } from './core/services/basket-service/basket.service';
 import { BasketComponent } from './pages/checkout-page/basket/basket.component';
 import { BookPageComponent } from './pages/book-page/book-page.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { BookPreviewComponent } from './book-preview/book-preview.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 
 @NgModule({
@@ -35,6 +37,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     CheckoutComponent,
     BasketComponent,
     BookPageComponent,
+    BookPreviewComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+.my-book-search-result-class {
+    background-color:rgb(243,247,247);
+    padding-top: 120px;
+    padding-bottom: 30px;
+  }
+
+.book-search-result-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.carousel {
+    max-width: 10000px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  
+  }

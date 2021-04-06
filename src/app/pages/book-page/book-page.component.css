@@ -1,0 +1,94 @@
+.book-page {
+    background-color: rgb(243,247,247);
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.back-button {
+    background-color: rgb(120,213,215);
+    margin-left: 150px;
+    margin-top: 20px;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+.book-container {
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px
+}
+
+.book-image {
+    width: 350px;
+    height: 500px;
+    display: block;
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+}
+
+.book-info {
+    margin-left: 450px;
+    margin-right: 40px;
+}
+
+.book-name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    font-size: 2vw;
+}
+
+.book-author {
+    font-size: 1.5vw;
+    font-style: italic;
+}
+
+.book-synopsis {
+    text-align: justify;
+    font-size: 1vw;
+    margin-top: 30px;
+}
+
+.book-genre {
+    font-size: 1.1vw;
+    font-style: italic;
+    position: absolute;
+    top: 460px;
+}
+
+.book-price {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    position: absolute;
+    top: 440px;
+    right: 0;
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 120px;
+    font-size: 1.5vw;
+}
+
+.add-to-basket-button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(120,213,215);
+    position: absolute;
+    top: 480px;
+    right: 0;
+    width: 150px;
+    margin-right: 70px;
+    border: none;
+    padding: 10px 25px;
+    float: right;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.add-to-basket-button:hover {
+    opacity: 0.7;
+}

@@ -1,46 +1,54 @@
-<main>
-     <div class="basket">
+<app-search-bar></app-search-bar>
 
-              <div class="basket-labels">
-                <ul>
-                  <li class="item item-heading">Book</li>
-                  <li class="author">Author</li>
-                  <li class="price">Price</li>
-                </ul>
-              </div>
+<section class="basket">
 
-              <div *ngFor="let book of basket?.books" class="basket-product">
-                <div class="item">
-                  <div class="product-image">
-                    <img src="{{book.image}}" alt="Placholder Image 2">
-                  </div>
-                  <div class="product-name">
-                     {{book.name}}
-                  </div>
-                </div>
-                 <div class="author">
-                    <div class="author-field">{{book.author.firstName}} {{book.author.lastName}}</div>
-                  </div>
-                <div class="price">{{book.price}}</div>
-                <div class="remove">
-                  <button (click)= "removeBook(book.id)">Remove</button>
-                </div>
-              </div>
+  <div class="basket-title">
+    <h4>Your Basket</h4>
+  </div>
+
+
+  <div class="container">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Book</th>
+          <th>Author</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody *ngFor="let book of basket?.books">
+        <tr>
+          <td>
+            <div class="book-image">
+              <img src="{{book.image}}" height="175px" width="125px">
             </div>
+          </td>
+          <td>{{book.author.firstName}} {{book.author.lastName}}</td>
+          <td>
+            {{book.price}}
+            <div class="remove">
+              <button (click)="removeBook(book.id)">Remove</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-            <aside>
-                <br><br>
-              <div class="summary">
-                <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
-               
-                <div class="summary-total">
-                  <div class="total-title">Total</div>
-                  <div class="total-value final-value" id="basket-total">{{basket?.totalPrice}}</div>
-                </div>
-               
-              </div>
-              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <aside>
+    <br><br>
+    <div class="summary">
+      <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
 
-            </aside>
-          </main>
-        
+      <div class="summary-total">
+        <div class="total-title">Total</div>
+        <div class="total-value final-value" id="basket-total">{{basket?.totalPrice}}</div>
+      </div>
+
+    </div>
+
+  </aside>
+
+</section>

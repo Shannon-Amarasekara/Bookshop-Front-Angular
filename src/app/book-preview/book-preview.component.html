@@ -1,0 +1,24 @@
+<div class="book-container">
+
+    <br><img class="book-image" (click)="viewBook(book.id)" src="{{book.image}}">
+
+    <div class="book-name">
+        {{book.name}}
+    </div>
+
+    <div class="author-name">
+        {{book.author.firstName}} {{book.author.lastName}}
+    </div>
+
+    <div class="book-price">
+        £{{book.price}}
+    </div>
+
+    <div class="checkout-btn">
+        <button (click)="addToBasket(book.id)" class="btn">
+            <div class="fas fa-cart-plus"></div>
+        </button>
+
+    </div>
+
+</div>

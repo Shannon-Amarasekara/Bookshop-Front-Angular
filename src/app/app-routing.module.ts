@@ -5,6 +5,7 @@ import { CreatorComponent } from './pages/creator-page/creator.component';
 import { CheckoutComponent } from './pages/checkout-page/checkout.component';
 import { BookPageComponent } from './pages/book-page/book-page.component';
 import { BookSearchComponent } from './pages/book-search-page/book-search.component';
+import { AuthenticationPageComponent } from './pages/authentication-page/authentication-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'creator', pathMatch: 'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'books/genre/:genre', component: BookSearchComponent},
   { path: 'basket', component: CheckoutComponent},
-  { path: 'books/:id', component: BookPageComponent}
+  { path: 'books/:id', component: BookPageComponent},
+  { path: 'authentication', component: AuthenticationPageComponent}
 ];
 
 @NgModule({

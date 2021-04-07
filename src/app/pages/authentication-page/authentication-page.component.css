@@ -1,0 +1,50 @@
+.authentication{
+  padding-bottom: 50px;
+  padding-left: 1%;
+  overflow: hidden;
+  background-color: rgb(243,247,247);
+}
+
+.authentication-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 120px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container{
+    width: 600px;
+    height: 300px;
+    position:relative;
+    background-color: white;
+}
+
+.login-form{
+    text-align: center;
+    font-size: 1.3vw;
+    display: block;
+}
+
+input{
+    width: 400px;
+    text-align: center;
+}
+
+label{
+    margin-top: 25px;
+}
+
+
+input[type=submit]{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border-style: none;
+    border-radius: 3px;    
+    background-color: rgb(120,213,215);    
+}
+
+.sign-up-button{
+    color: darkblue;
+    text-decoration-line: underline;
+}

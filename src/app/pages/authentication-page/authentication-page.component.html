@@ -1,0 +1,34 @@
+<app-menu></app-menu>>
+
+<app-search-bar></app-search-bar>
+
+<section class="authentication">
+
+    <div class="authentication-title">
+        <h4>Log in</h4>
+    </div>
+
+    <div class="container">
+        <form class="login-form">
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+       
+            <br>
+            <div class="submit-button">
+            <input (click)="login()"type="submit" value="SUBMIT">
+            </div>
+
+        </form>
+
+        
+        <div class="sign-up-button">
+            Sign up
+        </div>
+
+    </div>
+
+</section>

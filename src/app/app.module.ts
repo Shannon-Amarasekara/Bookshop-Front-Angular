@@ -21,6 +21,7 @@ import { BookPageComponent } from './pages/book-page/book-page.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BookPreviewComponent } from './book-preview/book-preview.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { AuthenticationPageComponent } from './pages/authentication-page/authentication-page.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     BasketComponent,
     BookPageComponent,
     BookPreviewComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    AuthenticationPageComponent
   ],
   imports: [
     BrowserModule,

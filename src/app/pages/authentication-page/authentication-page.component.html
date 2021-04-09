@@ -2,33 +2,54 @@
 
 <app-search-bar></app-search-bar>
 
-<section class="authentication">
+<section *ngIf="onLoginPage()" class="authentication">
 
     <div class="authentication-title">
         <h4>Log in</h4>
     </div>
 
-    <div class="container">
+    <div class="container-login">
         <form class="login-form">
 
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
+            <label for="username" id="username-login-label">Username</label><br>
+            <input type="text" id="username-login-input" name="username"><br>
 
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br>
-       
-            <br>
-            <div class="submit-button">
-            <input (click)="login()"type="submit" value="SUBMIT">
-            </div>
+            <label for="password" id="password-login-label">Password</label><br>
+            <input type="password" id="password-login-input" name="password"><br><br>
+
+            <input (click)="login()" type="submit" id="submit-button" value="SUBMIT">
 
         </form>
+        <a routerLink="/sign-up" id="sign-up-link">Sign up</a>
+    </div>
 
-        
-        <div class="sign-up-button">
-            Sign up
-        </div>
+</section>
 
+
+<section *ngIf="onSignUpPage()" class="authentication">
+
+    <div class="authentication-title">
+        <h4>Create your account</h4>
+    </div>
+
+    <div class="container-sign-up">
+        <form class="signup-form">
+
+                <label for="firstName" id="firstName-signup-label">First Name</label>
+                <input type="text" id="firstName-signup-input" name="firstName"><br>
+
+                <label for="lastName" id="lastName-signup-label">Last Name</label>
+                <input type="lastname" id="lastName-signup-input" name="lastName"><br>
+
+                <label for="username" id="username-signup-label">Username</label>
+                <input type="text" id="username-signup-input" name="username"><br>
+
+                <label for="password" id="password-signup-label">Password</label>
+                <input type="password" id="password-signup-input" name="password"><br>
+
+                <input (click)="signUp()" type="submit" id="submit-button" value="Submit">
+
+        </form>
     </div>
 
 </section>

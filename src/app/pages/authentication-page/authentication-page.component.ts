@@ -15,8 +15,28 @@ export class AuthenticationPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public login(){
+  public onLoginPage(): boolean {
+    if (window.location.href == "http://localhost:4200/login") {
+      return true;
+    }
+    return false;
+  }
+
+  public onSignUpPage(): boolean {
+    if (window.location.href == "http://localhost:4200/sign-up") {
+      return true;
+    }
+    return false;
+  }
+
+  public login() {
+    // implement
     console.log("login");
+  }
+
+  public signUp(){
+    // implement
+    console.log("signup");
   }
 
 }

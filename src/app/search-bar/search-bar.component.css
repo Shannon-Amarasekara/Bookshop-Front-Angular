@@ -1,8 +1,8 @@
 .search-bar-container {
-    margin-top: 60px;
-    height: 40px;
-    width: 100%;
-    background-color:rgb(120,213,215);
+  margin-top: 60px;
+  height: 40px;
+  width: 100%;
+  background-color:rgb(120,213,215);
 }
 
  input[type = text] {

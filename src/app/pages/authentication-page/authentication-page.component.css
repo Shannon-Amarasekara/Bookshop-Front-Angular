@@ -12,10 +12,11 @@
     padding-bottom: 20px;
 }
 
-.container{
-    width: 600px;
+.container-login{
+    width: 50%;
     height: 300px;
     position:relative;
+    margin: auto;
     background-color: white;
 }
 
@@ -25,17 +26,16 @@
     display: block;
 }
 
-input{
+#username-login-input, #password-login-input{
     width: 400px;
     text-align: center;
 }
 
-label{
+#username-login-label, #password-login-label{
     margin-top: 25px;
 }
 
-
-input[type=submit]{
+#submit-button{
     margin-top: 20px;
     width: 100px;
     height: 30px;
@@ -44,7 +44,38 @@ input[type=submit]{
     background-color: rgb(120,213,215);    
 }
 
-.sign-up-button{
-    color: darkblue;
+#sign-up-link{
+    color: blue;
     text-decoration-line: underline;
+}
+
+.container-sign-up{
+    width: 50%;
+    height: 300px;
+    position:relative;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+
+.sign-up{
+    font-size: 1.3vw;
+    display: block;
+}
+
+#firstName-signup-label
+, #lastName-signup-label
+, #username-signup-label
+, #password-signup-label{
+    margin-top: 25px;
+    margin-right: 5%;
+}
+
+#firstName-signup-input
+, #lastName-signup-input
+, #username-signup-input
+, #password-signup-input{
+    width: 50%;
+    border-radius: 5px;
+    border-width: 1px;
 }

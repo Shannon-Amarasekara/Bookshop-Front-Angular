@@ -14,7 +14,9 @@ const routes: Routes = [
   { path: 'books/genre/:genre', component: BookSearchComponent},
   { path: 'basket', component: CheckoutComponent},
   { path: 'books/:id', component: BookPageComponent},
-  { path: 'authentication', component: AuthenticationPageComponent}
+  { path: 'login', component: AuthenticationPageComponent},
+  { path: 'sign-up', component: AuthenticationPageComponent}
+
 ];
 
 @NgModule({
